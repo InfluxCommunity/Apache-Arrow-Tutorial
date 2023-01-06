@@ -2,16 +2,16 @@ import pyarrow as pa
 import pyarrow.compute as pc
 
 # Create a array from a list of values
-days = pa.array([1, 12, 17, 23, 28], type=pa.int8())
-months = pa.array([1, 2, 3, 4, 5], type=pa.int8())
-years = pa.array([2015, 2015, 2016, 2016, 2017], type=pa.int16())
+animal = pa.array(["sheep", "cows", "horses", "foxes", "sheep"], type=pa.string())
+count = pa.array([12, 5, 2, 1, 10], type=pa.int8())
+year = pa.array([2022, 2022, 2022, 2022, 2021], type=pa.int16())
 
 # Create a table from the arrays
-table = pa.Table.from_arrays([days, months, years], names=['day', 'month', 'year'])
-print(table)
+table = pa.Table.from_arrays([animal, count, year], names=['animal', 'count', 'year'])
 
 
-count_y = pc.value_counts(table['year'])
+
+count_y = pc.value_counts(table['animal'])
 print(count_y)
 
 # More example on this later...
