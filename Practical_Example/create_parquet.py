@@ -1,5 +1,4 @@
-from influxdb_client import InfluxDBClient, Point, Dialect
-from influxdb_client.client.write_api import SYNCHRONOUS
+from influxdb_client import InfluxDBClient
 from pandas import DataFrame as df
 import pyarrow.dataset as ds
 import pyarrow as pa
@@ -30,4 +29,4 @@ ds.write_dataset(table, "usgs", format="parquet",
                     pa.schema([table.schema.field("_measurement")])
                 ))
 
-                
+
