@@ -7,12 +7,12 @@ with InfluxDBClient(url="http://localhost:8086", token="edge", org="influxdb", d
     query_api = client.query_api()
     query = '''
     import "influxdata/influxdb/sample"
-    sample.data(set: "usgs")
+    sample.data(set: "${dataset}")
         |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
         |> group() 
     '''
-
-df = query_api.query_data_frame(query=query)
+param = {'dataset': 'usgs'}
+df = query_api.query_data_frame(query=query, params=param)
 
 
 table = pa.Table.from_pandas(df)

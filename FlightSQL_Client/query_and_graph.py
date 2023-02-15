@@ -6,6 +6,8 @@ import plotly.express as px
 import pandas as pd
 import pyarrow.dataset as ds
 
+
+
 # Read only token for demo purposes
 token = "kkKBmiS_gJ2GyIjVdeLdMSXwTyDGaBlidaZ53H-hkXoiBqRPcGcuWqZAK7PHA2hygX-W3MSd-nh1ypGR_UhaRA=="
 
@@ -15,7 +17,9 @@ client = FlightSQLClient(host='us-east-1-1.aws.cloud2.influxdata.com',
                          )
 
 # Execute a query against InfluxDB's Flight SQL endpoint                         
-query = client.execute("SELECT * FROM iox.mqtt_consumer WHERE time > (NOW() - INTERVAL '1 DAY') ")
+#query = client.execute("SELECT * FROM iox.mqtt_consumer WHERE time > (NOW() - INTERVAL '1 DAY') ")
+
+query = client.execute("SELECT * FROM iox.mqtt_consumer")
 
 # Create reader to consume result
 reader = client.do_get(query.endpoints[0].ticket)
@@ -23,6 +27,7 @@ reader = client.do_get(query.endpoints[0].ticket)
 # Read all data into a pyarrow.Table
 Table = reader.read_all()
 print(Table)
+
 
 # Convert to Pandas DataFrame
 df = Table.to_pandas()
