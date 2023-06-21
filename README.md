@@ -1,6 +1,7 @@
 <p align="center">
   <img src="https://arrow.apache.org/img/arrow-logo_vertical_black-txt_white-bg.svg" alt="Arrow Icon" width="200">
 </p>
+
 # Apache-Arrow-Tutorial
 
 This repository provides a series of Apache Arrow examples taken from various locations. The examples aim to improve understanding of what Apache Arrow is and how InfluxDB leverages this technology.
