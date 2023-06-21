@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://arrow.apache.org/img/arrow-logo_vertical_black-txt_white-bg.svg" alt="Arrow Icon">
+  <img src="https://arrow.apache.org/img/arrow-logo_vertical_black-txt_white-bg.svg" alt="Arrow Icon" width="200">
 </p>
 # Apache-Arrow-Tutorial
 
