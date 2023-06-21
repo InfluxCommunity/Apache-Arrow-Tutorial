@@ -3,7 +3,7 @@ from influxdb_client.client.write_api import SYNCHRONOUS
 
 # Set your InfluxDB credentials
 url = "https://us-east-1-1.aws.cloud2.influxdata.com"
-token = "JONCuM8MiccC974Zo2lAc5sRQndfNi_hlqYQmxSR5S3m3Uaogl6fW6WlkTM0erxPvNNBIL7W2eZanHbMqDIjfA=="
+token = ""
 org = "28d1f2f565460a6c"
 bucket_name = "new-bucket"
 

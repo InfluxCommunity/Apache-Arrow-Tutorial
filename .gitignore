@@ -131,3 +131,5 @@ dmypy.json
 # pyarrow
 example.parquet
 usgs
+mlruns
+decision_tree_5_depth

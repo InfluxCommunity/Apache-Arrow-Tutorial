@@ -6,7 +6,7 @@ from flightsql import FlightSQLClient
 import pandas as pd
 
 
-token = "6mFPNdcEwrjQD9utxkkMS6BfmhJoMIYsHkI317EcGSCMZaTalYADf0zm6u4VqrBv5YiGvvOf5Qa8sYTVrDigeA=="
+token = ""
 host = "eu-central-1-1.aws.cloud2.influxdata.com"
 bucket = "factory"
 

@@ -9,7 +9,7 @@ import pyarrow.dataset as ds
 
 
 # Read only token for demo purposes
-token = "kkKBmiS_gJ2GyIjVdeLdMSXwTyDGaBlidaZ53H-hkXoiBqRPcGcuWqZAK7PHA2hygX-W3MSd-nh1ypGR_UhaRA=="
+token = ""
 
 client = FlightSQLClient(host='us-east-1-1.aws.cloud2.influxdata.com',
                          token=token,
