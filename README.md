@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://arrow.apache.org/img/arrow-logo_vertical_black-txt_white-bg.svg" alt="Arrow Icon">
+  <img src="https://arrow.apache.org/img/arrow-logo_vertical_black-txt_white-bg.svg" alt="Arrow Icon" width="200">
 </p>
+
 # Apache-Arrow-Tutorial
 
 This repository provides a series of Apache Arrow examples taken from various locations. The examples aim to improve understanding of what Apache Arrow is and how InfluxDB leverages this technology.
@@ -19,8 +20,7 @@ Apache Parquet is a columnar storage file format available to any project in the
 
 ## Examples
 
-The following```markdown
-table provides a list of the examples available in this repository. Click on the directory name to navigate to the respective examples.
+The following table provides a list of the examples available in this repository. Click on the directory name to navigate to the respective examples.
 
 | Name  | Description |
 | ----- | ----------- |
@@ -33,7 +33,7 @@ table provides a list of the examples available in this repository. Click on the
 | [PyArrow](https://github.com/InfluxCommunity/Apache-Arrow-Tutorial/tree/main/PyArrow) | Examples using PyArrow, the Python implementation of Apache Arrow |
 | [pyinflux3](https://github.com/InfluxCommunity/Apache-Arrow-Tutorial/tree/main/pyinflux3) | Examples using InfluxDB Python client with Apache Arrow |
 | [pyspark](https://github.com/InfluxCommunity/Apache-Arrow-Tutorial/tree/main/pyspark) | Examples of integrating Apache Arrow with PySpark |
-| [sqlal](https://github.com/InfluxCommunity/Apache-Arrow-Tutorial/tree/main/sqlal) | Possibly examples of using SQL Alchemy with Apache Arrow |
+| [sqlal](https://github.com/InfluxCommunity/Apache-Arrow-Tutorial/tree/main/sqlal) | Examples of using SQL Alchemy with Apache Arrow |
 
 ## Contributing
 
