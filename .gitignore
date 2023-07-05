@@ -133,3 +133,4 @@ example.parquet
 usgs
 mlruns
 decision_tree_5_depth
+ML/logs
