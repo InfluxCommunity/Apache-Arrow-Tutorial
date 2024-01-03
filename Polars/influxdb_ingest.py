@@ -46,13 +46,13 @@ client = InfluxDBClient3(
     org="6a841c0c08328fb1", enable_gzip=True, write_client_options=wco)
 
 
-pl_df =pl.read_parquet('pokemon_1m.parquet')
+pl_df =pl.read_parquet('pokemon_100_000.parquet')
 
 print(pl_df.columns)
 
 print(pl_df)
 
 
-client._write_api.write(bucket="pokemon-codex", record=pl_df, data_frame_measurement_name='caught', data_frame_tag_columns=['trainer', 'id', 'num'], data_frame_timestamp_column='timestamp')
+client.write(database="pokemon-codex", record=pl_df, data_frame_measurement_name='caught', data_frame_tag_columns=['trainer', 'id', 'num'], data_frame_timestamp_column='timestamp')
 
 client.close()
